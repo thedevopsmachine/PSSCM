@@ -1,0 +1,38 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Build] (Table)
+       [dbo].[BuildInstance] (Table)
+       [dbo].[BuildInstanceVariable] (Table)
+       [dbo].[BuildParameter] (Table)
+       [dbo].[BuildStep] (Table)
+       [dbo].[BuildStepInstance] (Table)
+       [dbo].[BuildSystemVariable] (Table)
+       [dbo].[OperatingSystem] (Table)
+       [dbo].[PackageSource] (Table)
+       [dbo].[DEF_BuildInstance_DiskCount] (Default Constraint)
+       [dbo].[DEF_BuildInstance_Status] (Default Constraint)
+       [dbo].[DEF_BuildInstance_RequestedAtDTO] (Default Constraint)
+       [dbo].[DEF_BuildStep_IsEnabled] (Default Constraint)
+       [dbo].[DEF_BuildStep_ErrorAction] (Default Constraint)
+       [dbo].[DEF_BuildStepInstance_Status] (Default Constraint)
+       [dbo].[DEF_PackageSource_IsDefault] (Default Constraint)
+       [dbo].[FK_Build_OperatingSystem] (Foreign Key)
+       [dbo].[FK_BuildInstance_Build] (Foreign Key)
+       [dbo].[FK_BuildInstance_PackageSource] (Foreign Key)
+       [dbo].[FK_BuildInstanceVariable_BuildInstance] (Foreign Key)
+       [dbo].[FK_BuildParameter_Build] (Foreign Key)
+       [dbo].[FK_BuildStep_Build] (Foreign Key)
+       [dbo].[FK_BuildStepInstance_BuildInstance] (Foreign Key)
+       [dbo].[FK_BuildStepInstance_BuildStep] (Foreign Key)
+
+** Supporting actions

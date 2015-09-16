@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+  <settings pass="specialize">
+    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <AutoLogon>
+        <Password>
+          <Value>{InitialAdminPassword}</Value>
+          <PlainText>true</PlainText>
+        </Password>
+        <Username>Administrator</Username>
+        <LogonCount>1</LogonCount>
+        <Enabled>true</Enabled>
+      </AutoLogon>
+      <ComputerName>{ComputerName}</ComputerName>
+      <ProductKey>{ProductKey}</ProductKey>
+      <RegisteredOwner>{RequesterUsername}</RegisteredOwner>
+      <RegisteredOrganization>Contoso</RegisteredOrganization>
+      <TimeZone>{TimezoneName}</TimeZone>
+      <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
+    </component>
+  </settings>
+  <settings pass="oobeSystem">
+    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <FirstLogonCommands>
+        <SynchronousCommand wcm:action="add">
+          <Order>1</Order>
+          <RequiresUserInput>false</RequiresUserInput>
+          <CommandLine>powershell.exe -ExecutionPolicy Bypass C:\BuildScript.ps1</CommandLine>
+        </SynchronousCommand>
+      </FirstLogonCommands>
+      <ShowPowerButtonOnStartScreen>true</ShowPowerButtonOnStartScreen>
+      <RegisteredOrganization>Contoso</RegisteredOrganization>
+      <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
+      <BluetoothTaskbarIconEnabled>false</BluetoothTaskbarIconEnabled>
+      <TimeZone>{TimezoneName}</TimeZone>
+      <RegisteredOwner>{RequesterUsername}</RegisteredOwner>
+      <OOBE>
+        <HideEULAPage>true</HideEULAPage>
+        <HideLocalAccountScreen>true</HideLocalAccountScreen>
+      </OOBE>
+      <UserAccounts>
+        <AdministratorPassword>
+          <Value>{InitialAdminPassword}</Value>
+          <PlainText>true</PlainText>
+        </AdministratorPassword>
+      </UserAccounts>
+    </component>
+    <component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <InputLocale>{InputLocale}</InputLocale>
+      <SystemLocale>{SystemLocale}</SystemLocale>
+      <UILanguage>{UILanguage}</UILanguage>
+      <UserLocale>{UserLocale}</UserLocale>
+    </component>
+  </settings>
+</unattend>

@@ -1,0 +1,5 @@
+C:\Users\justin.yancey\Documents\PSSCM\PSSCM\bin\Debug\PSSCMDB.dacpac
+C:\Users\justin.yancey\Documents\PSSCM\PSSCM\bin\Debug\PSSCM.dll
+C:\Users\justin.yancey\Documents\PSSCM\PSSCM\bin\Debug\PSSCM.pdb
+C:\Users\justin.yancey\Documents\PSSCM\PSSCM\obj\Debug\PSSCM.dll
+C:\Users\justin.yancey\Documents\PSSCM\PSSCM\obj\Debug\PSSCM.pdb

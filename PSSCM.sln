@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PSSCMDB", "PSSCM\PSSCMDB.sqlproj", "{4F6A62C3-3DAE-4C77-91F4-A4F1F44A7DDB}"
+EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "PSSCM", "PSSCM\PSSCM.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F6A62C3-3DAE-4C77-91F4-A4F1F44A7DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6A62C3-3DAE-4C77-91F4-A4F1F44A7DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6A62C3-3DAE-4C77-91F4-A4F1F44A7DDB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4F6A62C3-3DAE-4C77-91F4-A4F1F44A7DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6A62C3-3DAE-4C77-91F4-A4F1F44A7DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6A62C3-3DAE-4C77-91F4-A4F1F44A7DDB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
