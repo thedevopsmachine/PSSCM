@@ -215,6 +215,6 @@ $bs5 = New-BuildStep -BuildName $buildname `
 
 New-BuildInstance -BuildName $buildname -ComputerName JYDEMO2 -PackageSource $pkgsource -UserLocale "en-US" -RequestedBy "Justin" `
 	-MACAddresses "00155D2C7604" -DSCConfigurationID ([Guid]::NewGuid()) -DSCPullServerURI "http://SQL1.devopsmachine.com:8080/PSDSCPullServer.svc" `
-	-SystemLocale "en-US" -InputLocale "en-US" -UILanguage "en-US" -ProductKey 9J8XN-F6X49-B3PRY-4CKWQ-C36PM `
+	-SystemLocale "en-US" -InputLocale "en-US" -UILanguage "en-US" -ProductKey xxxx-xxxx-xxxx-xxxx-xxxx `
 	-InitialAdminPassword $cred.Password -TimezoneName "Pacific Standard Time" `
 	-FullyQualifiedDomainName "devopsmachine.com" -DJUserDomainName $cred.Domain -DJUsername $cred.UserName -DJPassword $cred.Password -Verbose
